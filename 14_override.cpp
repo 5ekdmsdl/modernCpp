@@ -17,12 +17,11 @@ public:
 	*/
 	
 	// => Cpp11 부터 override 키워드 제공!
-	// compiler가 error 찾아준다.
 	virtual void fooo() override {}
 	virtual void goo(double a) override  {}
 	virtual void hoo() const  override {}
-	
-	// => 가상함수 재정의시에 override 필수!!
+	// compiler가 error 찾아준다.
+
 };
 
 int main() {
