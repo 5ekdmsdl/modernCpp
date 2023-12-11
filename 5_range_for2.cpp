@@ -10,6 +10,16 @@ int main()
 	{
 		std::cout << n << std::endl;
 	}
+
+	// 위 for문 컴파일러가 아래처럼 바꿈
+	// 결국 아래코드랑 성능이 똑같음.!
+	auto first = v.begin();
+	auto last = v.end();
+	
+	for (;first != last;first++) {
+		auto& n = *first;
+		std::cout << n << std::endl;
+	}
 }
 
 
