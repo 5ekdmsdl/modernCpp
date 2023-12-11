@@ -138,6 +138,12 @@
     <ClCompile Include="13_default 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="14_override_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cppmaster.h">
