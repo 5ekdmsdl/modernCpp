@@ -13,6 +13,7 @@ int main()
 
 	// 위 for문 컴파일러가 아래처럼 바꿈
 	// 결국 아래코드랑 성능이 똑같음.!
+	// https://cppinsights.io/ 로 컴파일러의 마음을 알 수 있다.
 	auto first = v.begin();
 	auto last = v.end();
 	
