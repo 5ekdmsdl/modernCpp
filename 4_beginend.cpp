@@ -32,4 +32,31 @@ int main()
 	// 배열도 std:;size 사용하면 변수 타입 상관없이 사용가능
 	// 배열 vector 모두 사용 가능
 	auto sz1 = std::size(v);
+
+	/////////////////////////////////////////////////////
+	// C20에서 반복자 꺼내기!
+
+	std::vector<int> vv = { 1,2,3,4,5 };
+
+	// 반복자를 꺼내는 3가지 방법
+	// # 1. 멤버 함수 begin 사용(C++98)
+	auto p1 = vv.begin();
+
+	// # 2. 일반 함수 begin 사용(C++11)
+	// => v 가 배열이라도 ok
+	auto p2 = std::begin(vv);
+
+	// # 3. std::ranges::begin 사용(C++20)
+	auto p3 = std::ranges::begin(vv);
+
+	// std::ranges::begin : 안정성이 개선됨,
+	auto p4 = std::begin(std::vector<int>{1, 2, 3});
+	// std::begin은 임시객체라도 begin이 나온다. => 사용하면 runtime error
+	// 근데 빌드는 된다.
+
+	// 그래서 얘는 컴파일 에러 내준다. (좋네)
+	auto p4 = std::ranges::begin(std::vector<int>{1, 2, 3});
+
+
+
 }
