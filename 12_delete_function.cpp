@@ -6,7 +6,16 @@ class Point
 public:
 	Point() {}
 	Point(int a, int b) {}
+
+	// [컴파일러 자동 생성 목록] (사용자가 하나도 안만들면...)
+	// = ** Special Member Function **
+	// 생성자, 소멸자, 복사생성자, 대입연산자
+	// 이동생성자, 이동대입연산자 
+
+	// 근데 필요없으면 delete 하자.
+	Point(const Point&) = delete;
 };
+
 int main()
 {
 	Point p1;
