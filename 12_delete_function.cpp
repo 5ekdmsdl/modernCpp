@@ -12,8 +12,12 @@ public:
 	// 생성자, 소멸자, 복사생성자, 대입연산자
 	// 이동생성자, 이동대입연산자 
 
-	// 근데 필요없으면 delete 하자.
+	// Cpp11 : 근데 필요없으면 delete 하자.
 	Point(const Point&) = delete;
+	// cpp98 : 그때그시절... 해결방법, private + 선언만!
+private:
+	Point(const Point&);
+	
 };
 
 int main()
