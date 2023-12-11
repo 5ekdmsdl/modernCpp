@@ -51,3 +51,5 @@ int main()
 // 2. static_assert 는 안전한 코드를 만드는 데 도움을 줍니다.
 // 3. static_assert 는 많이 사용해도 성능과는 무관합니다.
 //   
+
+// static_assert는 최대한 많이 써서 컴파일 타임에 문제를 줄이자!!
