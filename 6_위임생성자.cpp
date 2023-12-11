@@ -5,11 +5,12 @@ class Point
 public:
 	int x, y;
 public:
-	Point() 
-	{
+	Point() {
+		// C98에서는 생성자내에서 다른 생성자 호출 X
+		// => 이렇게 하면 생성자안에서 임시 객체를 또 만드는 것임.
+		Point(0, 0);
 	}
-	Point(int a, int b) : x(a), y(b)
-	{
+	Point(int a, int b) : x(a), y(b) {
 		// 복잡한 초기화 코드
 	}
 };
