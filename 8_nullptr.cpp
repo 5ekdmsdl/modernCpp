@@ -1,4 +1,5 @@
 // 8_nullptr - 29page
+// (시험 문제!!!!!)
 
 int main()
 {
@@ -10,4 +11,6 @@ int main()
 	int* p2 = 0;		// bad code
 	int* p3 = nullptr;	// good code
 	//int v1 = nullptr;	// error
+
+
 }
